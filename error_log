@@ -1,0 +1,75 @@
+[22-Jun-2016 17:43:20 Etc/GMT] PHP Parse error:  syntax error, unexpected '}' in /home/gfincuct/public_html/springdaleschool.in/application/controllers/welcome.php on line 40
+[22-Jun-2016 17:43:22 Etc/GMT] PHP Parse error:  syntax error, unexpected '}' in /home/gfincuct/public_html/springdaleschool.in/application/controllers/welcome.php on line 40
+[22-Jun-2016 17:43:24 Etc/GMT] PHP Parse error:  syntax error, unexpected '}' in /home/gfincuct/public_html/springdaleschool.in/application/controllers/welcome.php on line 40
+[22-Jun-2016 17:43:25 Etc/GMT] PHP Parse error:  syntax error, unexpected '}' in /home/gfincuct/public_html/springdaleschool.in/application/controllers/welcome.php on line 40
+[22-Jun-2016 17:43:26 Etc/GMT] PHP Parse error:  syntax error, unexpected '}' in /home/gfincuct/public_html/springdaleschool.in/application/controllers/welcome.php on line 40
+[22-Jun-2016 17:43:27 Etc/GMT] PHP Parse error:  syntax error, unexpected '}' in /home/gfincuct/public_html/springdaleschool.in/application/controllers/welcome.php on line 40
+[22-Jun-2016 17:43:28 Etc/GMT] PHP Parse error:  syntax error, unexpected '}' in /home/gfincuct/public_html/springdaleschool.in/application/controllers/welcome.php on line 40
+[22-Jun-2016 17:43:29 Etc/GMT] PHP Parse error:  syntax error, unexpected '}' in /home/gfincuct/public_html/springdaleschool.in/application/controllers/welcome.php on line 40
+[22-Jun-2016 17:43:30 Etc/GMT] PHP Parse error:  syntax error, unexpected '}' in /home/gfincuct/public_html/springdaleschool.in/application/controllers/welcome.php on line 40
+[22-Jun-2016 17:43:31 Etc/GMT] PHP Parse error:  syntax error, unexpected '}' in /home/gfincuct/public_html/springdaleschool.in/application/controllers/welcome.php on line 40
+[22-Jun-2016 17:43:32 Etc/GMT] PHP Parse error:  syntax error, unexpected '}' in /home/gfincuct/public_html/springdaleschool.in/application/controllers/welcome.php on line 40
+[22-Jun-2016 17:43:40 Etc/GMT] PHP Parse error:  syntax error, unexpected '}' in /home/gfincuct/public_html/springdaleschool.in/application/controllers/welcome.php on line 40
+[22-Jun-2016 17:43:53 Etc/GMT] PHP Parse error:  syntax error, unexpected '}' in /home/gfincuct/public_html/springdaleschool.in/application/controllers/welcome.php on line 40
+[22-Jun-2016 17:43:55 Etc/GMT] PHP Parse error:  syntax error, unexpected '}' in /home/gfincuct/public_html/springdaleschool.in/application/controllers/welcome.php on line 40
+[24-Jun-2016 02:20:18 Etc/GMT] PHP Parse error:  syntax error, unexpected '<' in /home/gfincuct/public_html/springdaleschool.in/application/views/schoolstaff.php on line 13
+[24-Jun-2016 02:20:23 Etc/GMT] PHP Parse error:  syntax error, unexpected '<' in /home/gfincuct/public_html/springdaleschool.in/application/views/schoolstaff.php on line 13
+[24-Jun-2016 02:20:29 Etc/GMT] PHP Parse error:  syntax error, unexpected '<' in /home/gfincuct/public_html/springdaleschool.in/application/views/schoolstaff.php on line 13
+[24-Jun-2016 02:24:33 Etc/GMT] PHP Parse error:  syntax error, unexpected '<' in /home/gfincuct/public_html/springdaleschool.in/application/views/schoolstaff.php on line 13
+[24-Jun-2016 02:46:32 Etc/GMT] PHP Parse error:  syntax error, unexpected ';' in /home/gfincuct/public_html/springdaleschool.in/application/views/schoolstaff.php on line 15
+[30-Jun-2016 18:08:23 Etc/GMT] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting function (T_FUNCTION) in /home/gfincuct/public_html/springdaleschool.in/application/controllers/welcome.php on line 137
+[15-Mar-2017 07:10:43 Etc/GMT] PHP Parse error:  syntax error, unexpected '}' in /home/gfincuct/public_html/springdaleschool.in/application/views/gallery.php on line 17
+[15-Mar-2017 08:04:11 Etc/GMT] PHP Parse error:  syntax error, unexpected '<' in /home/gfincuct/public_html/springdaleschool.in/application/views/welcome_message.php on line 119
+[09-May-2017 16:02:34 Etc/GMT] PHP Fatal error:  Cannot redeclare Welcome::managerDesk() in /home/gfincuct/public_html/springdaleschool.in/application/controllers/welcome.php on line 131
+[28-Jun-2017 01:30:11 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[28-Jun-2017 01:30:11 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/springdaleschool.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[28-Jun-2017 02:03:30 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[28-Jun-2017 02:03:30 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/springdaleschool.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[28-Jun-2017 02:44:23 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[28-Jun-2017 02:44:23 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/springdaleschool.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[28-Jun-2017 02:44:26 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[28-Jun-2017 02:44:26 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/springdaleschool.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[28-Jun-2017 02:44:27 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[28-Jun-2017 02:44:27 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/springdaleschool.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[28-Jun-2017 02:44:28 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[28-Jun-2017 02:44:28 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/springdaleschool.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[28-Jun-2017 02:44:29 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[28-Jun-2017 02:44:29 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/springdaleschool.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[28-Jun-2017 02:44:30 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[28-Jun-2017 02:44:30 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/springdaleschool.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[28-Jun-2017 02:44:31 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[28-Jun-2017 02:44:31 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/springdaleschool.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[28-Jun-2017 02:44:33 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[28-Jun-2017 02:44:33 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/springdaleschool.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[28-Jun-2017 02:44:34 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[28-Jun-2017 02:44:34 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/springdaleschool.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[28-Jun-2017 02:44:35 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[28-Jun-2017 02:44:35 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/springdaleschool.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[28-Jun-2017 02:44:51 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[28-Jun-2017 02:44:51 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/springdaleschool.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[28-Jun-2017 02:44:58 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[28-Jun-2017 02:44:58 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/springdaleschool.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[28-Jun-2017 02:44:59 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[28-Jun-2017 02:44:59 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/springdaleschool.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[28-Jun-2017 02:45:00 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[28-Jun-2017 02:45:00 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/springdaleschool.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[28-Jun-2017 02:45:01 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[28-Jun-2017 02:45:01 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/springdaleschool.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[28-Jun-2017 02:45:02 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[28-Jun-2017 02:45:02 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/springdaleschool.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[28-Jun-2017 02:45:04 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[28-Jun-2017 02:45:04 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/springdaleschool.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[28-Jun-2017 02:45:05 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[28-Jun-2017 02:45:05 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/springdaleschool.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[28-Jun-2017 02:45:06 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[28-Jun-2017 02:45:06 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/springdaleschool.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[28-Jun-2017 02:45:07 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[28-Jun-2017 02:45:07 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/springdaleschool.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[28-Jun-2017 02:45:08 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[28-Jun-2017 02:45:08 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/springdaleschool.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[28-Jun-2017 02:45:09 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[28-Jun-2017 02:45:09 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/springdaleschool.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[28-Jun-2017 02:45:12 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[28-Jun-2017 02:45:12 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/springdaleschool.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[28-Jun-2017 02:45:13 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[28-Jun-2017 02:45:13 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/springdaleschool.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
