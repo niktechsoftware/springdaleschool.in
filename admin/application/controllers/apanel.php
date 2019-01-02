@@ -23,7 +23,8 @@ function __construct()
 	{
 		// Opening balance closing balance code start
 		$clo = $this->db->query("select * from opening_closing_balance ORDER BY id DESC LIMIT 1")->row();
-		if($this->db->count_all("opening_closing_balance") <=0 ){
+		if($this->db->count_all("opening_closing_balance") <=0 )
+		{
 			$balance = array(
 				"opening_balance" => 0,
 				"closing_balance" => 0,
@@ -57,7 +58,8 @@ function __construct()
 		$this->load->view("include/admin/mainContent",$data);
 	}
 	
-	public function studentRegister(){
+	public function studentRegister()
+	{
 		$data['title'] = "New Student Registration";
 		$data['smallTitle'] = "Student Registration";
 		$data['bigTitle'] = "Student Registration";
@@ -66,7 +68,8 @@ function __construct()
 		$data['footerJs'] = "admin/footerJs/studentRegisterJs";
 		$this->load->view("include/admin/mainContent",$data);
 	}
-	public function editProfile(){
+	public function editProfile()
+	{
 		$data['title'] = "Edit Student Profile";
 		$data['smallTitle'] = "Student Profile";
 		$data['bigTitle'] = "Student Profile";
@@ -75,7 +78,8 @@ function __construct()
 		$data['footerJs'] = "admin/footerJs/studentRegisterJs";
 		$this->load->view("include/admin/mainContent",$data);
 	}
-	public function printRegister(){
+	public function printRegister()
+	{
 		$data['title'] = "Student Profile";
 		$data['smallTitle'] = "Student Profile/Admission Invoice";
 		$data['bigTitle'] = "Student Profile/Admission Invoice";
@@ -85,7 +89,8 @@ function __construct()
 		$this->load->view("include/admin/mainContent",$data);
 	}
 	
-	public function studentList(){
+	public function studentList()
+	{
 		$data['title'] = "Student List";
 		$data['smallTitle'] = "Student List";
 		$data['bigTitle'] = "Student List";
