@@ -117,7 +117,7 @@ Spring Dale School adheres to quality Management System in line with ISO 9001 :2
    					 
 				?>    
                        <p> <span id="lblhigh1"  style="display:inline-block;width:250px;">
-                        <img src="<?php echo base_url(); ?>springdale/assets/images/stuImage/<?php echo $gal->photo;?>" height="50" width="50" alt="ad" />
+                        <img src="<?php echo base_url(); ?>/assets/images/stuImage/<?php echo $gal->photo;?>" height="50" width="50" alt="ad" />
                        <?php 
                       
                        echo "&nbsp;".$h.") ".$gal->first_name." ".$gal->last_name."[".$gal->class_id."-".$gal->section."]"; ?></span></p>

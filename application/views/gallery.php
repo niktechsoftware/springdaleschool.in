@@ -16,7 +16,7 @@
    foreach($val->result() as $d):
   if($i%3==0){?></div><div><?php } 
   ?>           
-  <img src="<?php echo base_url();?>springdale/assets/images/gallery/<?php echo $d->image; ?>"  alt="Cinque Terre" width="304" height="200"> 
+  <img src="<?php echo base_url();?>admin/assets/images//<?php echo $d->image; ?>"  alt="Cinque Terre" width="304" height="200"> 
   
   
   <?php $i++; endforeach;} ?>

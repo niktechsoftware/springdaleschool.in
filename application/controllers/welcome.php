@@ -1,6 +1,6 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+   <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Welcome extends MY_Controller {
 
 	
 	
@@ -8,6 +8,7 @@ public function index(){
 	$data['pagename'] = "Home";
 	$data['title'] = "Spring Dale School";
 	$data['body'] = "welcome_message";
+	 
 	$this->load->view("include/template",$data);
 }
 
