@@ -19,7 +19,8 @@ function __construct()
 		}
 	}
 	
-	public function index1(){
+	public function index1()
+	{
 		// Opening balance closing balance code start
 		$clo = $this->db->query("select * from opening_closing_balance ORDER BY id DESC LIMIT 1")->row();
 		if($this->db->count_all("opening_closing_balance") <=0 ){
@@ -29,7 +30,8 @@ function __construct()
 				"opening_date" => date("Y-m-d"),
 				"closing_date" => date("Y-m-d")			);
 			$this->db->insert('opening_closing_balance',$balance);
-		}else{
+		}
+		else{
 			$cl_date = $clo->closing_date;
 			$cl_balance = $clo->closing_balance;
 			$cr_date = date('Y-m-d');
