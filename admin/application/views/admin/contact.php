@@ -8,21 +8,26 @@
                                         <thead>
                                             <tr>
                                              
-                                                <th>message</th>
+                                                
                                                 <th>name</th>
                                                 <th>email</th>
+                                                   <th>contact</th>
+                                                      <th>question</th>
                                                
                                             </tr>
                                         </thead>
                                         <tbody>
                                         	<?php $i = 1;?>
-                                        	<?php $res = $this->db->get("career")->result();?>
+                                        	<?php $res = $this->db->get("carrer")->result();?>
                                         	<?php foreach($res as $row):?>
                                             <tr>
                                               
-                                                <td><?php echo $row->message; ?></td>
+                                             
                                                 <td><?php echo $row->name; ?></td>
                                                 <td><?php echo $row->email; ?></td>
+                                                   <td><?php echo $row->contact; ?></td>
+                                                      <td><?php echo $row->ques; ?></td>
+                                                         <td><?php echo $row->enquiry_date; ?></td>
                                                 
                                               
                                                 <td>

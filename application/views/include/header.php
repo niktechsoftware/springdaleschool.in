@@ -39,7 +39,7 @@
 				<li> <a href="<?php echo base_url(); ?>">Home</a></li>
 				<li><a href="#">About Us</a>
 					<ul>
-					<li> <a href="#">Chairman Desk</a></li>
+					<li> <a href="<?php echo base_url(); ?>welcome/chairmanDesk">Chairman Desk</a></li>
 						<li> <a href="<?php echo base_url(); ?>welcome/managerDesk">Manager Desk</a></li>
 
 						<li> <a href="<?php echo base_url(); ?>welcome/directorDesk">Director Desk</a></li>

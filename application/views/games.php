@@ -2,14 +2,11 @@
  
  <div id="main" class="round_8 clearfix">
             <div class="page_title round_6">
-                <h1 class="replace">School Campus</h1>
+                <h1 class="replace">Games & sports</h1>
             </div>
-           
-           
-  <div class="container">
-  <h2>Campus</h2>
+            <h2>Games&Sports</h2>
    <div>   
- <?php $val = $this->db->get("campus"); 
+ <?php $val = $this->db->get("games"); 
    if($val->num_rows()>0)
    {
    $i=1;
@@ -19,6 +16,12 @@
   
   
   <?php $i++; endforeach;} ?>
+
+           
+  <div class="container">
+  <h2>Games</h2>
+   <div>   
+
 
    	 </div>
 </div>

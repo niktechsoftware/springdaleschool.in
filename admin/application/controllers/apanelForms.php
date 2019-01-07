@@ -300,6 +300,63 @@ class ApanelForms extends CI_Controller{
 		}
 	}
 
+function savegames(){
+		$photo_name = time().trim($_FILES['selectedStu']['name']);
+		$data=array(
+				'name'=>$this->input->post("title"),
+				'image'=>$photo_name,
+				'date'=>date("Y-m-d")
+		);
+		$query = $this->db->insert("games",$data);
+		if($query){
+			$this->load->library('upload');
+			$image_path = realpath(APPPATH . '../assets/images');
+			$config['upload_path'] = $image_path;
+			$config['allowed_types'] = 'gif|jpg|jpeg|png';
+			$config['max_size'] = '2048';
+			$config['file_name'] = $photo_name;
+		}
+		if (!empty($_FILES['selectedStu']['name'])) {
+			$this->upload->initialize($config);
+			$this->upload->do_upload('selectedStu');
+			
+			redirect(base_url()."apanel/games");
+			//echo $image_path;
+		}
+		else{
+			echo "Somthing going wrong. Please Contact Site administrator";
+		}
+	}
+
+	function savecampus(){
+		$photo_name = time().trim($_FILES['selectedStu']['name']);
+		$data=array(
+				
+				'image'=>$photo_name,
+				'date'=>date("Y-m-d")
+		);
+		$query = $this->db->insert("campus",$data);
+		if($query){
+			$this->load->library('upload');
+			$image_path = realpath(APPPATH . '../assets/images');
+			$config['upload_path'] = $image_path;
+			$config['allowed_types'] = 'gif|jpg|jpeg|png';
+			$config['max_size'] = '2048';
+			$config['file_name'] = $photo_name;
+		}
+		if (!empty($_FILES['selectedStu']['name'])) {
+			$this->upload->initialize($config);
+			$this->upload->do_upload('selectedStu');
+			
+			redirect(base_url()."apanel/campus");
+			//echo $image_path;
+		}
+		else{
+			echo "Somthing going wrong. Please Contact Site administrator";
+		}
+	}
+
+
 
 
 function saveStaff(){
@@ -333,7 +390,7 @@ function saveStaff(){
 	}
 public function deleteCareer(){
 		$this->db->where("id",$this->uri->segment(3));
-		if($this->db->delete("career")){
+		if($this->db->delete("carrer")){
 
 			redirect(base_url()."apanel/contact");
 		}
@@ -352,6 +409,27 @@ public function deleteCareer(){
 			echo "Somthing going wrong. Please Contact Site administrator";
 		}
 	}
+	public function deletegames(){
+		$this->db->where("id",$this->uri->segment(3));
+		if($this->db->delete("games")){
+			redirect(base_url()."apanel/games");
+		}
+		else{
+			echo "Somthing going wrong. Please Contact Site administrator";
+		}
+	}
+
+
+	public function deleteCampus(){
+		$this->db->where("id",$this->uri->segment(3));
+		if($this->db->delete("campus")){
+			redirect(base_url()."apanel/campus");
+		}
+		else{
+			echo "Somthing going wrong. Please Contact Site administrator";
+		}
+	}
+
 		public function deleteStaff(){
 		$this->db->where("id",$this->uri->segment(3));
 		if($this->db->delete("employee_info")){

@@ -250,7 +250,7 @@
 							</i>Contact No. : <input class="form-field" name="contact" style="margin-left: 10px; width: 150px;" type="text" required="required"/></div>
 						<div class="form-title" style="margin-left: 25px; font-style: initial">
 							<i class="fa fa-comment-o" style="color: #20b8f0; padding-right: 10px;">
-							</i>Question : <input class="form-field" name="comments" style="margin-left: 30px; width: 150px;" type="text" required="required" />
+							</i>Message : <input class="form-field" name="comments" style="margin-left: 30px; width: 150px;" type="text" required="required" />
 							<input class="submit-button" style="margin-left: 20px; float: left; margin-left: 300px;" type="submit" value="Submit" /></div>
 							 <?php if($this->uri->segment(3));{
             echo "Successfully Save and we will contact soon.";}?>

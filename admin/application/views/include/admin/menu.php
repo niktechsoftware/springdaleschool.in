@@ -11,7 +11,9 @@
                         	</a>
                             <ul class="sub-menu">
                                 <li><a href="<?php echo base_url();?>apanel/noticeBoard">NOTICE BOARD</a></li>
-                              
+                                <li><a href="<?php echo base_url();?>apanel/contact">CONTACT</a></li>
+                                <li><a href="<?php echo base_url();?>apanel/games">GAMES & SPORTS</a></li>
+                              <li><a href="<?php echo base_url();?>apanel/campus">CAMPUS</a></li>
                                 <li><a href="<?php echo base_url();?>apanel/gallery">GALLERY</a></li>
                                 
                             </ul>

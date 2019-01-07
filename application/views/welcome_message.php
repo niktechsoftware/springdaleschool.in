@@ -14,9 +14,9 @@
 					<ul class="overview">
 					<li><a href="<?php echo base_url();?>index.php/welcome/admissionPro" class="menu-box round_4"> <span class="title">Academic</span><br/>
 						Admission Process | Student Studies	<span class="arrow"></span> </a></li>
-						<li><a href="#" class="menu-box round_4"> <span class="title">Campus</span><br/>
+						<li><a href="<?php echo base_url();?>index.php/welcome/campus" class="menu-box round_4"> <span class="title">Campus</span><br/>
 						 Building | Class Room |  Library<span class="arrow"></span> </a></li>
-						<li><a href="#" class="menu-box round_4"> <span class="title">Games & Sports</span><br/>
+						<li><a href="<?php echo base_url();?>index.php/welcome/games" class="menu-box round_4"> <span class="title">Games & Sports</span><br/>
 							Craft | Dance | Sport<span class="arrow"></span> </a></li>
 						<li><a href="<?php echo base_url(); ?>index.php/welcome/schoolStaff" class="menu-box round_4"> <span class="title">School Staff</span><br/>
 						Teacher | Others	<span class="arrow"></span> </a></li>

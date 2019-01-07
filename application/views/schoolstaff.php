@@ -10,7 +10,7 @@
             $ef=$this->db->get("employee_info")->result();
             foreach($ef as $v):
             ?><div><div>
-           <img class="alignleft shadow" src="<?php echo base_url(); ?>springdale/assets/images/empImage/<?php echo $v->photo;?>" alt="Post thumbail 1" height="120" width="150"/>
+           <img class="alignleft shadow" src="<?php echo base_url(); ?>admin/assets/images/<?php echo $v->photo;?>" alt="Post thumbail 1" height="120" width="150"/>
            </div>
            <div>Name : <?php echo $v->first_name." ".$v->mid_name." ".$v->last_name;?>
            <br><br>Designation : <?php echo $v->job_title;?>

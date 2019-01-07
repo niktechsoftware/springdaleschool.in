@@ -196,6 +196,24 @@ function __construct()
 		$data['footerJs'] = "admin/footerJs/studentListJs";
 		$this->load->view("include/admin/mainContent",$data);
 	}
+	public function campus(){
+		$data['title'] = "Campus";
+		$data['smallTitle'] = "Website/campus";
+		$data['bigTitle'] = "Campus";
+		$data['body'] = "admin/campus";
+		$data['headerCss'] = "admin/headerCss/studentListCss";
+		$data['footerJs'] = "admin/footerJs/studentListJs";
+		$this->load->view("include/admin/mainContent",$data);
+	}
+	public function games(){
+		$data['title'] = "Games";
+		$data['smallTitle'] = "Website/games";
+		$data['bigTitle'] = "Games&Sports";
+		$data['body'] = "admin/games";
+		$data['headerCss'] = "admin/headerCss/studentListCss";
+		$data['footerJs'] = "admin/footerJs/studentListJs";
+		$this->load->view("include/admin/mainContent",$data);
+	}
 	public function staff(){
 		$data['title'] = "Staff";
 		$data['smallTitle'] = "Website/Staff";

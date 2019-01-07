@@ -11,7 +11,7 @@
             
            
            <p align="justify"><b>Age eligibility </b>(As on 1st April of the academic session for which admission is sought)<br />
-(A) Nursery &#8211; 3 years<br />
+(A) Play Group &#8211; 2.5 years<br />
 (B) L.K.G &#8211; 4 years<br />
 (C) U.K.G &#8211; 5 years<br />
 (D) Class I &#8211; 6 years<br />
@@ -116,10 +116,62 @@ The children who have registered will have to appear for an admission test (for 
 </td>
 </tr></tbody>
 </table>
-        
+<br><br>
+<!--<table id="AutoNumber1" width="99%" border="0" cellspacing="0" cellpadding="0">-->
+<center> <h2>   REGISTRATION FORM</h2> </center>
+       <b> <p>The form should be filled in capital letter</p></b>
+       <form method="post">
+       
            
-           
-        
-                       
+<label><b>Student name:</b></label>
+
+<input type="text" name="name" placeholder ="enter name" class="form-control" size="70px">
+<span></span><span></span>
+<br><br>
+        <label><b>Date of birth:</b></label>
+
+<input type="date" name="dob" placeholder ="D.O.B" class="form-control" size="35px">
+
+      <label><b>&nbsp&nbsp&nbsp&nbsp Age:</b></label>
+
+<input type="text" name="age" placeholder ="D.O.B" class="form-control" size="35px">
+     
+        <br><br>
+         <label><b>Addmission for class:</b></label>
+
+<input type="text" name="addmission" placeholder ="Admission class" class="form-control" size="25px">
+<br><br>
+ <label><b>Gender(male/female):</b></label>
+
+<input type="text" name="Gender" placeholder ="Gender" class="form-control" size="25px">
+<br><br>
+ <label><b>Nationality:</b></label>
+
+<input type="text" name="nation" placeholder ="Nationality" class="form-control" size="25px">
+<br><br>
+<b><h4 style="color:black">FATHER'S DETAIL</h4></b>
+<br>
+<label><b>Father name:</b></label>
+
+<input type="text" name="fname" placeholder ="Father name" class="form-control" size="70px">
+<br><br>
+<label><b>Occupation:</b></label>
+
+<input type="text" name="occupation" placeholder ="occupation" class="form-control" size="35px">
+
+<label><b>&nbsp&nbsp&nbsp&nbsp  Education:</b></label>
+
+<input type="text" name="Education" placeholder ="Education" class="form-control" size="35px">
+<br><br>
+<label><b>Language spoken at home:</b></label>
+
+<input type="text" name="language" placeholder ="Language" class="form-control" size="25px">
+<br><br>
+<label><b>Residential address:</b></label>
+
+<input type="text" name="add" placeholder ="Residential address" class="form-control" size="45px">
+
+
+
                  </div>
         </div>
