@@ -78,16 +78,21 @@ function __construct()
 		$data['footerJs'] = "admin/footerJs/studentRegisterJs";
 		$this->load->view("include/admin/mainContent",$data);
 	}
+	
+
 	public function printRegister()
 	{
 		$data['title'] = "Student Profile";
 		$data['smallTitle'] = "Student Profile/Admission Invoice";
 		$data['bigTitle'] = "Student Profile/Admission Invoice";
-		$data['body'] = "admin/printRegister";
+		$data['body'] = "admin/registrationform";
 		$data['headerCss'] = "admin/headerCss/dashboardCss";
 		$data['footerJs'] = "admin/footerJs/dashboardJs";
 		$this->load->view("include/admin/mainContent",$data);
 	}
+
+
+
 	
 	public function studentList()
 	{

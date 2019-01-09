@@ -15,6 +15,7 @@
                                 <li><a href="<?php echo base_url();?>apanel/games">GAMES & SPORTS</a></li>
                               <li><a href="<?php echo base_url();?>apanel/campus">CAMPUS</a></li>
                                 <li><a href="<?php echo base_url();?>apanel/gallery">GALLERY</a></li>
+                                  <li><a href="<?php echo base_url();?>apanel/printRegister">Registration Form</a></li>
                                 
                             </ul>
                         </li>

@@ -120,7 +120,7 @@ The children who have registered will have to appear for an admission test (for 
 <!--<table id="AutoNumber1" width="99%" border="0" cellspacing="0" cellpadding="0">-->
 <center> <h2>   REGISTRATION FORM</h2> </center>
        <b> <p>The form should be filled in capital letter</p></b>
-       <form method="post">
+       <form method="post" action="<?php echo base_url();?>index.php/welcome/regisenquiry">
        
            
 <label><b>Student name:</b></label>
@@ -134,7 +134,7 @@ The children who have registered will have to appear for an admission test (for 
 
       <label><b>&nbsp&nbsp&nbsp&nbsp Age:</b></label>
 
-<input type="text" name="age" placeholder ="D.O.B" class="form-control" size="35px">
+<input type="text" name="age" placeholder ="Age" class="form-control" size="35px">
      
         <br><br>
          <label><b>Addmission for class:</b></label>
@@ -143,7 +143,7 @@ The children who have registered will have to appear for an admission test (for 
 <br><br>
  <label><b>Gender(male/female):</b></label>
 
-<input type="text" name="Gender" placeholder ="Gender" class="form-control" size="25px">
+<input type="text" name="gender" placeholder ="Gender" class="form-control" size="25px">
 <br><br>
  <label><b>Nationality:</b></label>
 
@@ -157,20 +157,58 @@ The children who have registered will have to appear for an admission test (for 
 <br><br>
 <label><b>Occupation:</b></label>
 
-<input type="text" name="occupation" placeholder ="occupation" class="form-control" size="35px">
+<input type="text" name="foccupation" placeholder ="occupation" class="form-control" size="35px">
 
 <label><b>&nbsp&nbsp&nbsp&nbsp  Education:</b></label>
 
-<input type="text" name="Education" placeholder ="Education" class="form-control" size="35px">
+<input type="text" name="education" placeholder ="Education" class="form-control" size="35px">
 <br><br>
 <label><b>Language spoken at home:</b></label>
 
-<input type="text" name="language" placeholder ="Language" class="form-control" size="25px">
+<input type="text" name="flanguage" placeholder ="Language" class="form-control" size="25px">
 <br><br>
 <label><b>Residential address:</b></label>
 
-<input type="text" name="add" placeholder ="Residential address" class="form-control" size="45px">
+<input type="text" name="radd" placeholder ="Residential address" class="form-control" size="45px">
+<br><br>
+<label><b>Contact Detail:</b></label>
 
+<input type="text" name="cond" placeholder ="Contact Detail" class="form-control" size="45px">
+<label><b>&nbsp&nbsp&nbsp&nbsp Phone no.:</b></label>
+
+<input type="number" name="phone" placeholder ="Phone number" class="form-control" size="35px">
+<br><br>
+<label><b>Mobile number:</b></label>
+
+<input type="number" name="mobile" placeholder ="Mobile number" class="form-control" size="45px">
+<label><b>&nbsp&nbsp&nbsp&nbsp Email.:</b></label>
+
+<input type="email" name="email" placeholder ="email" class="form-control" size="35px">
+<br><br>
+<b><h4 style="color:black">MOTHER'S DETAIL</h4></b>
+<br>
+<label><b>Mother name:</b></label>
+
+<input type="text" name="mname" placeholder ="Mother name" class="form-control" size="70px">
+<br><br>
+<label><b>Occupation:</b></label>
+
+<input type="text" name="moccupation" placeholder ="occupation" class="form-control" size="35px">
+
+<label><b>&nbsp&nbsp&nbsp&nbsp  Education:</b></label>
+
+<input type="text" name="meducation" placeholder ="Education" class="form-control" size="35px">
+<br><br>
+<label><b>Language Spoken at home:</b></label>
+
+<input type="text" name="mlanguage" placeholder ="language" class="form-control" size="35px">
+
+
+<br><br>
+<center>
+<input type="submit" name="sub" class="bg-info">
+
+</center>
 
 
                  </div>

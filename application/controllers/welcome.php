@@ -12,6 +12,32 @@ public function index(){
 	$this->load->view("include/template",$data);
 }
 
+public function sendotp(){
+	$name = $this->input->post("name");
+		$contact = $this->input->post("contact");
+	
+	 $otp=rand(1000,999999);
+	$msg = "Dear ".$name." your one time password for filling this form is = ".$otp;
+	//$email=$email.",sharadrai99@gmail.com,springdalejuniorhighschool2512@gmail.com";
+		
+$otpdata=array(
+"mobile"=>$contact,
+"otp"	=>$otp,
+"status"=>"pending"
+);
+		$data = array(
+				'name'=>$name,
+				'email'=>$email,
+				'contact'=>$contact,
+				'ques'=>$comments,
+				'enquiry_date'=>date("Y-m-d"),
+				'response'=>"NO"
+		);
+		$this->load->helper('sms');
+		sms($contact,$msg);
+		echo "send Successfully";
+}
+
 public function directorDesk(){
 	$data['pagename'] = "Director Desk";
 	$data['title'] = "Spring Dale School";
@@ -85,6 +111,38 @@ function managerDesk(){
 	$data['body'] = "managerDesk";
 	$this->load->view("include/template",$data);
 }
+
+function regisenquiry()
+{
+	$a=$this->input->post("name");
+	$b=$this->input->post("dob");
+	$c=$this->input->post("age");
+	$d=$this->input->post("addmission");
+	$e=$this->input->post("gender");
+	$f=$this->input->post("nation");
+	$g=$this->input->post("fname");
+	$h=$this->input->post("occupation");
+	$i=$this->input->post("education");
+	$j=$this->input->post("flanguage");
+	$k=$this->input->post("radd");
+	$l=$this->input->post("cond");
+	$m=$this->input->post("phone");
+	$n=$this->input->post("mobile");
+	$o=$this->input->post("email");
+	$p=$this->input->post("mname");
+	$q=$this->input->post("moccupation");
+	$r=$this->input->post("meducation");
+	$s=$this->input->post("mlanguage");
+$data=array(
+'sname'=>$a,'dob'=>$b,'age'=>$c,'addforclass'=>$d,'gender'=>$e,'nation'=>$f,'fname'=>$g,'foccupation'=>$h,'fedu'=>$i,'flanguage'=>$j,'resiaddress'=>$k,'contactdetail'=>$l,'phone'=>$m,'mobile'=>$n,'email'=>$o,'mname'=>$p,'moccupation'=>$q,'meducation'=>$r,'mlanguage'=>$s
+);
+
+$this->db->insert("regenquiry",$data);
+
+}
+
+
+
 
 function saveenquiry(){
 	$name = $this->input->post("name");

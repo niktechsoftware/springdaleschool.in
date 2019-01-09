@@ -241,23 +241,51 @@
 						<div class="form-title" style="margin-left: 25px; font-style: initial">
 							<i class="fa fa-user" style="color: #20b8f0; padding-right: 10px;">
 							</i>Name : 
-							<input class="form-field" name="name" style="margin-left: 45px; width: 150px;" type="text" required="required"/></div>
+							<input class="form-field" id="name" name="name" style="margin-left: 45px; width: 150px;" type="text" required="required"/></div>
 						<div class="form-title" style="margin-left: 25px; font-style: 50px;">
 							<i class="fa fa-envelope-square" style="color: #20b8f0; padding-right: 10px;">
 							</i>Email : <input class="form-field" name="email" style="margin-left: 53px; width: 150px;" type="email" required="required"/></div>
 						<div class="form-title" style="margin-left: 25px; font-style: initial">
 							<i class="fa fa-phone-square" style="color: #20b8f0; padding-right: 10px;">
-							</i>Contact No. : <input class="form-field" name="contact" style="margin-left: 10px; width: 150px;" type="text" required="required"/></div>
+							</i>Contact No. : <input class="form-field" id= "contact" "name="contact" style="margin-left: 10px; width: 150px;" type="text" required="required"/></div>
+							<div id ="otpstatus"></div>
+							
 						<div class="form-title" style="margin-left: 25px; font-style: initial">
 							<i class="fa fa-comment-o" style="color: #20b8f0; padding-right: 10px;">
 							</i>Message : <input class="form-field" name="comments" style="margin-left: 30px; width: 150px;" type="text" required="required" />
-							<input class="submit-button" style="margin-left: 20px; float: left; margin-left: 300px;" type="submit" value="Submit" /></div>
+							<input class="submit-button" style="margin-left: 20px; float: left; margin-left: 300px;" id ="otp" type="button" value="Get Varification" /></div>
+							<div class="form-title" style="margin-left: 25px; font-style: initial">
+								<input class="form-field" name="otpbox" id="otpbox" style="margin-left: 53px; width: 150px;" type="text" required="required"/>
+							<input class="submit-button" style="margin-left: 20px; float: left; margin-left: 300px;" id ="otp" type="submit" value="submit" />
+
+							</div>
+
 							 <?php if($this->uri->segment(3));{
             echo "Successfully Save and we will contact soon.";}?>
+            			
 						
 					</div>
 					
+					
 			</form>
             	</div>
+				<script>
+				$("#otpbox").hide();
+						$("#otp").click(function(){
+							
+							var name = $("#name").val();
+
+							var contact = $("#contact").val();
+
+							//var discountv=$("#discountv").val();
+							$.post("<?php echo site_url("welcome/sendotp") ?>",{name : name, contact : contact}, function(data){
+								$("#otpstatus").html(data);
+								$("#otpbox").show();
+
+							});
+							});
+
+				
+				</script>
             
  </div>           
