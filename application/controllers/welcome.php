@@ -4,7 +4,8 @@ class Welcome extends MY_Controller {
 
 	
 	
-public function index(){
+public function index()
+{
 	$data['pagename'] = "Home";
 	$data['title'] = "Spring Dale School";
 	$data['body'] = "welcome_message";
@@ -12,7 +13,8 @@ public function index(){
 	$this->load->view("include/template",$data);
 }
 
-public function sendotp(){
+public function sendotp()
+{
 	$name = $this->input->post("name");
 		$contact = $this->input->post("contact");
 	
@@ -20,7 +22,8 @@ public function sendotp(){
 	$msg = "Dear ".$name." your one time password for filling this form is = ".$otp;
 	//$email=$email.",sharadrai99@gmail.com,springdalejuniorhighschool2512@gmail.com";
 		
-$otpdata=array(
+$otpdata=array
+(
 "mobile"=>$contact,
 "otp"	=>$otp,
 "status"=>"pending"
@@ -38,7 +41,8 @@ $otpdata=array(
 		echo "send Successfully";
 }
 
-public function directorDesk(){
+public function directorDesk()
+{
 	$data['pagename'] = "Director Desk";
 	$data['title'] = "Spring Dale School";
 	$data['body'] = "directorDesk";
@@ -120,6 +124,7 @@ function regisenquiry()
 	$d=$this->input->post("addmission");
 	$e=$this->input->post("gender");
 	$f=$this->input->post("nation");
+
 	$g=$this->input->post("fname");
 	$h=$this->input->post("occupation");
 	$i=$this->input->post("education");
@@ -134,7 +139,7 @@ function regisenquiry()
 	$r=$this->input->post("meducation");
 	$s=$this->input->post("mlanguage");
 $data=array(
-'sname'=>$a,'dob'=>$b,'age'=>$c,'addforclass'=>$d,'gender'=>$e,'nation'=>$f,'fname'=>$g,'foccupation'=>$h,'fedu'=>$i,'flanguage'=>$j,'resiaddress'=>$k,'contactdetail'=>$l,'phone'=>$m,'mobile'=>$n,'email'=>$o,'mname'=>$p,'moccupation'=>$q,'meducation'=>$r,'mlanguage'=>$s
+'sname'=>$a,'dob'=>$b,'age'=>$c,'addforclass'=>$d,'gender'=>$e,'nation'=>$f,'father'=>'FATHER NAME','fname'=>$g,'foccupation'=>$h,'fedu'=>$i,'flanguage'=>$j,'resiaddress'=>$k,'contactdetail'=>$l,'phone'=>$m,'mobile'=>$n,'email'=>$o,'MOTHER'=>'MOTHER NAME','mname'=>$p,'moccupation'=>$q,'meducation'=>$r,'mlanguage'=>$s
 );
 
 $this->db->insert("regenquiry",$data);

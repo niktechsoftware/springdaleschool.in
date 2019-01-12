@@ -9,29 +9,35 @@
                                         <br>
                                         <?php $i = 1;?>
                                             <?php $res = $this->db->get("regenquiry")->result();?>
-                                            <?php foreach($res as $row):?>
 
-                                        <h4>Student name : </h4> <?php echo $row->sname; ?>
-                                         <h4>Date of birth : </h4>
-                                          <h4>Age : </h4>
-                                           <h4>Addmission forclass : </h4>
-                                            <h4>Gender(male/female) : </h4>
-                                             <h4>Nationality : </h4>
-                                             <h3>FATHER'S DETAIL</h3>
-                                              <h4>Father'name : </h4>
-                                               <h4>Occupation : </h4>
-                                                <h4>Education : </h4>
-                                                 <h4>Language spoken at home : </h4>
-                                                  <h4>Residential number : </h4>
-                                                   <h4>Contact details : </h4>
-                                                    <h4>Phone no. : </h4>
-                                                    <h4>Mobile no : </h4>
-                                                    <h4>Email : </h4>
-                                                    <h3>MOTHER'S DETAIL</h3>
-                                                     <h4> Mother's name: </h4>
-                                                      <h4>Occupation : </h4>
-                                                       <h4>Education : </h4>
-                                                        <h4>Language spoken at home : </h4>
+                                            <table>
+                                            <?php foreach($res as $row)
+                                            {
+                                            ?>
+                                            <tr><h2><center>REGISTRATION FORM</center></h2></tr>
+                                            <tr>
+                                       <td> <h4>Student name :</h4></td> <td> <?php echo $row->sname; ?></td></tr>
+                                        <tr><td> <h4>Date of birth : </h4></td><td><?php echo $row->dob;?></td></tr>
+                                           <tr><td> <h4>Age : </h4></td><td><?php echo $row->age;?></td></tr>
+                                           <tr><td>  <h4>Addmission forclass : </h4></td><td><?php echo $row->addforclass;?></td></tr>
+                                           <tr><td><h4>Gender(male/female) : </h4></td><td><?php echo $row->gender;?></td></tr>
+                                            <tr><td> <h4>Nationality : </h4></td><td><?php echo $row->nation;?></td></tr>
+                                          <tr><h3><?php echo $row->father;?></h3></tr>
+                                             <tr><td><h4>Father'name : </h4></td><td><?php echo $row->fname;?></td></tr>
+                                               <tr><td><tr><td>  <h4>Occupation : </h4></td><td><?php echo $row->foccupation;?></td></tr>
+                                               <tr><td><h4>Education : </h4></td><td><?php echo $row->fedu;?></td></tr>
+                                                <tr><td><h4>Language spoken at home : </h4></td><td><?php echo $row->flanguage;?></td></tr>
+                                                 <tr><td> <h4>Residential number : </h4></td><td><?php echo $row->resiaddress;?></td></tr>
+                                                 <tr><td> <h4>Contact details : </h4></td><td><?php echo $row->contactdetail;?></td></tr>
+                                                  <tr><td><h4>Phone no. : </h4></td><td><?php echo $row->phone;?></td></tr>
+                                                  <tr><td><h4>Mobile no : </h4></td><td><?php echo $row->mobile;?></td></tr>
+                                                   <tr><td><h4>Email : </h4></td><td><?php echo $row->email;?></td></tr>
+                                                   <tr><h3><?php echo $row->mother;?></h3></tr>
+                                                   <tr><td><h4> Mother's name: </h4></td><td><?php echo $row->mname;?></td></tr>
+                                                    <tr><td><h4>Occupation : </h4></td><td><?php echo $row->moccupation;?></td></tr>
+                                                     <tr><td><h4>Education : </h4></td><td><?php echo $row->meducation;?></td></tr>
+                                                      <tr><td> <h4>Language spoken at home : </h4></td><td><?php echo $row->mlanguage;?></td></tr>
+                                                      <?php }?>
 
 
                                        <!-- <tbody>
@@ -57,7 +63,7 @@
                                             <?php $i++; ?>
                                             <?php endforeach;?>
                                         </tbody>-->
-                                          <?php endforeach;?>
+                                          <?php// endforeach;?>
                                        </table>  
                                     </div>
                                 </div>
