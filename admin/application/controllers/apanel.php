@@ -57,6 +57,30 @@ function __construct()
 		$data['footerJs'] = "admin/footerJs/dashboardJs";
 		$this->load->view("include/admin/mainContent",$data);
 	}
+
+	public function addformDetail()
+	{
+
+
+		$id = $this->uri->segment(3);
+		$this->db->where("id",$id);
+		//$this->load->get('regenquiry',$id);
+		$data = $this->db->get("regenquiry")->row();
+		echo $data->sname;
+
+	}
+	public function deleteformDetail()
+	{
+
+		$id = $this->uri->segment(3);
+		$this->db->where("id",$id);
+		 $this->db->delete("regenquiry");
+
+
+
+	}
+
+
 	
 	public function studentRegister()
 	{

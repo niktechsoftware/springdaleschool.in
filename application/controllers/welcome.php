@@ -28,14 +28,7 @@ $otpdata=array
 "otp"	=>$otp,
 "status"=>"pending"
 );
-		$data = array(
-				'name'=>$name,
-				'email'=>$email,
-				'contact'=>$contact,
-				'ques'=>$comments,
-				'enquiry_date'=>date("Y-m-d"),
-				'response'=>"NO"
-		);
+		
 		$this->load->helper('sms');
 		sms($contact,$msg);
 		echo "send Successfully";

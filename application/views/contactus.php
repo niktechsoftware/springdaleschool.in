@@ -257,8 +257,11 @@
 							<div class="form-title" style="margin-left: 25px; font-style: initial">
 								<input class="form-field" name="otpbox" id="otpbox" style="margin-left: 53px; width: 150px;" type="text" required="required"/>
 							<input class="submit-button" style="margin-left: 20px; float: left; margin-left: 300px;" id ="otp" type="submit" value="submit" />
+							<br><br>
 
 							</div>
+						</div>
+					</form>
 
 							 <?php if($this->uri->segment(3));{
             echo "Successfully Save and we will contact soon.";}?>

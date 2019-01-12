@@ -10,11 +10,30 @@
                                         <?php $i = 1;?>
                                             <?php $res = $this->db->get("regenquiry")->result();?>
 
-                                            <table>
+                                            <thead><tr>
+                                              <th>ID</th>
+                                              <th>STUDENT NAME</th>
+                                              <th>FATHER NAME</th>
+                                              <th>MOTHER NAME</th>
+                                              <th>MOBILE</th>
+                                               <th>EMAIL</th></tr></thead>
+
                                             <?php foreach($res as $row)
                                             {
                                             ?>
-                                            <tr><h2><center>REGISTRATION FORM</center></h2></tr>
+                                            <tr><td>
+                                            <?php echo $row->id ?></td>
+                                    <td>   <a href="#"><?php echo $row->sname;?></a></td>
+                                          <td><?php echo $row->fname;?></td>
+                                          <td><?php echo $row->mname;?></td>
+                                         <td><?php echo $row->mobile;?></td>
+                                         <td><?php echo $row->email;?></td>
+                                         <td><a href="<?php echo base_url();?>index.php/apanel/addformDetail/<?php echo $row->id;?>">View Detail</a></td>
+                                         <td><a href="<?php echo base_url();?>apanel/deleteformDetail"">Delete</a></td>
+                                       </tr>
+
+
+                                           <!-- <tr><h2><center>REGISTRATION FORM</center></h2></tr>
                                             <tr>
                                        <td> <h4>Student name :</h4></td> <td> <?php echo $row->sname; ?></td></tr>
                                         <tr><td> <h4>Date of birth : </h4></td><td><?php echo $row->dob;?></td></tr>
@@ -36,7 +55,7 @@
                                                    <tr><td><h4> Mother's name: </h4></td><td><?php echo $row->mname;?></td></tr>
                                                     <tr><td><h4>Occupation : </h4></td><td><?php echo $row->moccupation;?></td></tr>
                                                      <tr><td><h4>Education : </h4></td><td><?php echo $row->meducation;?></td></tr>
-                                                      <tr><td> <h4>Language spoken at home : </h4></td><td><?php echo $row->mlanguage;?></td></tr>
+                                                      <tr><td> <h4>Language spoken at home : </h4></td><td><?php echo $row->mlanguage;?></td></tr>-->
                                                       <?php }?>
 
 
