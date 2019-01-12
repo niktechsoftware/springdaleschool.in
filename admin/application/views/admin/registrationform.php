@@ -29,7 +29,7 @@
                                          <td><?php echo $row->mobile;?></td>
                                          <td><?php echo $row->email;?></td>
                                          <td><a href="<?php echo base_url();?>index.php/apanel/addformDetail/<?php echo $row->id;?>">View Detail</a></td>
-                                         <td><a href="<?php echo base_url();?>apanel/deleteformDetail"">Delete</a></td>
+                                         <td><a href="<?php echo base_url();?>apanel/deleteformDetail/<?php echo $row->id;?>">Delete</a></td>
                                        </tr>
 
 

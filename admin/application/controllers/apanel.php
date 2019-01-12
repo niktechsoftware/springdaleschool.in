@@ -74,7 +74,11 @@ function __construct()
 
 		$id = $this->uri->segment(3);
 		$this->db->where("id",$id);
-		 $this->db->delete("regenquiry");
+		$a= $this->db->delete("regenquiry");
+		 if($a)
+		 {
+		 	redirect ("apanel/printRegister");
+		 }
 
 
 
