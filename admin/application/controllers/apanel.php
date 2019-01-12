@@ -64,7 +64,7 @@ function __construct()
 
 		$id = $this->uri->segment(3);
 		$this->db->where("id",$id);
-		//$this->load->get('regenquiry',$id);
+		
 		$data = $this->db->get("regenquiry")->row();
 		echo $data->sname;
 
