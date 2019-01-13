@@ -65,8 +65,8 @@ function __construct()
 		$id = $this->uri->segment(3);
 		$this->db->where("id",$id);
 		
-		$data = $this->db->get("regenquiry")->row();
-		echo $data->sname;
+		$data['abc'] = $this->db->get("regenquiry")->row();
+		$this->load->view('showform',$data);
 
 	}
 	public function deleteformDetail()

@@ -135,7 +135,12 @@ $data=array(
 'sname'=>$a,'dob'=>$b,'age'=>$c,'addforclass'=>$d,'gender'=>$e,'nation'=>$f,'father'=>'FATHER NAME','fname'=>$g,'foccupation'=>$h,'fedu'=>$i,'flanguage'=>$j,'resiaddress'=>$k,'contactdetail'=>$l,'phone'=>$m,'mobile'=>$n,'email'=>$o,'MOTHER'=>'MOTHER NAME','mname'=>$p,'moccupation'=>$q,'meducation'=>$r,'mlanguage'=>$s
 );
 
-$this->db->insert("regenquiry",$data);
+$a=$this->db->insert("regenquiry",$data);
+if($a)
+{
+
+	redirect("welcome/admissionPro");
+}
 
 }
 
