@@ -10,7 +10,7 @@ class Login extends CI_Controller{
 			$this->session->unset_userdata();
 			$this->session->sess_destroy();
 		}
-		$data['title'] = "daffodils public school";
+		$data['title'] = "SPRING DALE SCHOOL";
 		$this->load->view("admin/login",$data);
 	}
 	

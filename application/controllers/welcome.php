@@ -119,7 +119,7 @@ function regisenquiry()
 	$f=$this->input->post("nation");
 
 	$g=$this->input->post("fname");
-	$h=$this->input->post("occupation");
+	$h=$this->input->post("foccupation");
 	$i=$this->input->post("education");
 	$j=$this->input->post("flanguage");
 	$k=$this->input->post("radd");
@@ -132,7 +132,7 @@ function regisenquiry()
 	$r=$this->input->post("meducation");
 	$s=$this->input->post("mlanguage");
 $data=array(
-'sname'=>$a,'dob'=>$b,'age'=>$c,'addforclass'=>$d,'gender'=>$e,'nation'=>$f,'fname'=>$g,'foccupation'=>$h,'fedu'=>$i,'flanguage'=>$j,'resiaddress'=>$k,'contactdetail'=>$l,'phone'=>$m,'mobile'=>$n,'email'=>$o,'mname'=>$p,'moccupation'=>$q,'meducation'=>$r,'mlanguage'=>$s
+'sname'=>$a,'dob'=>$b,'age'=>$c,'addforclass'=>$d,'gender'=>$e,'nation'=>$f,'fname'=>$g,'foccupation'=>$h,'fedu'=>$i,'flanguage'=>$j,'resiaddress'=>$k,'contactdetail'=>$l,'phone'=>$m,'mobile'=>$n,'email'=>$o,'mname'=>$p,'moccupation'=>$q,'meducation'=>$r,'mlanguage'=>$s,'date'=>date('y-m-d')
 );
 
 $a=$this->db->insert("regenquiry",$data);

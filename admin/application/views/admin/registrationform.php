@@ -23,7 +23,7 @@
                                             ?>
                                             <tr><td>
                                             <?php echo $row->id ?></td>
-                                    <td>   <a href="#"><?php echo $row->sname;?></a></td>
+                                    <td><?php echo $row->sname;?></td>
                                           <td><?php echo $row->fname;?></td>
                                           <td><?php echo $row->mname;?></td>
                                          <td><?php echo $row->mobile;?></td>

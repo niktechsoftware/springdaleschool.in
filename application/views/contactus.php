@@ -204,11 +204,11 @@
 
 <div id="main" class="round_8 clearfix">
             <div class="page_title round_6">
-                <h1 class="replace">School Contact</h1>
+                <h2 class="replace">School Contact</h2>
             </div>
            
             <div class="col_201">
-				<h4 class="replace">Contact</h4>
+				<h5 class="replace">Contact</h5>
 				<address>
 				Spring Dale School,<br/>
 				Eidgah Road Near Badraka Police Chauki </br>
@@ -218,6 +218,12 @@
 				Mobile:  09450938643 <br/>
 				</address>
 				<div>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
 				<br>
 				<br>
 				<br>
@@ -247,7 +253,7 @@
 							</i>Email : <input class="form-field" name="email" style="margin-left: 53px; width: 150px;" type="email" required="required"/></div>
 						<div class="form-title" style="margin-left: 25px; font-style: initial">
 							<i class="fa fa-phone-square" style="color: #20b8f0; padding-right: 10px;">
-							</i>Contact No. : <input class="form-field" id= "contact" "name="contact" style="margin-left: 10px; width: 150px;" type="text" required="required"/></div>
+							</i>Contact No. : <input class="form-field" id= "contact" name="contact" style="margin-left: 10px; width: 150px;" type="text" required="required"/></div>
 							<div id ="otpstatus"></div>
 							
 						<div class="form-title" style="margin-left: 25px; font-style: initial">
