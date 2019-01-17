@@ -19,45 +19,7 @@ function __construct()
 		}
 	}
 	
-	public function index1()
-	{
-		// Opening balance closing balance code start
-		$clo = $this->db->query("select * from opening_closing_balance ORDER BY id DESC LIMIT 1")->row();
-		if($this->db->count_all("opening_closing_balance") <=0 )
-		{
-			$balance = array(
-				"opening_balance" => 0,
-				"closing_balance" => 0,
-				"opening_date" => date("Y-m-d"),
-				"closing_date" => date("Y-m-d")			);
-			$this->db->insert('opening_closing_balance',$balance);
-		}
-		else{
-			$cl_date = $clo->closing_date;
-			$cl_balance = $clo->closing_balance;
-			$cr_date = date('Y-m-d');
-			if($cl_date != $cr_date)
-			{
-				$balance = array(
-						"opening_balance" => $cl_balance,
-						"closing_balance" => $cl_balance,
-						"opening_date" => $cr_date,
-						"closing_date" => $cr_date
-				);
-				$this->db->insert('opening_closing_balance',$balance);
-			}
-			// Opening balance closing balance code end
-		}
 	
-		$data['title'] = "Dashboard";
-		$data['smallTitle'] = "Dashboard";
-		$data['bigTitle'] = "Dashboard";
-		$data['body'] = "admin/dashboard";
-		$data['headerCss'] = "admin/headerCss/dashboardCss";
-		$data['footerJs'] = "admin/footerJs/dashboardJs";
-		$this->load->view("include/admin/mainContent",$data);
-	}
-
 	public function addformDetail()
 	{
 
@@ -162,15 +124,6 @@ function __construct()
 		$this->load->view("include/admin/mainContent",$data);
 	}
 	
-	public function latestNews(){
-		$data['title'] = "Latest News";
-		$data['smallTitle'] = "Website/Latest News";
-		$data['bigTitle'] = "Latest News";
-		$data['body'] = "admin/latestNews";
-		$data['headerCss'] = "admin/headerCss/studentListCss";
-		$data['footerJs'] = "admin/footerJs/studentListJs";
-		$this->load->view("include/admin/mainContent",$data);
-	}
 	
 	public function selectedStudent(){
 		$data['title'] = "Selected Student";
@@ -182,43 +135,9 @@ function __construct()
 		$this->load->view("include/admin/mainContent",$data);
 	}
 	
-	public function uploadbooks(){
-		$data['title'] = "Upload Books";
-		$data['smallTitle'] = "Website/Upload Books";
-		$data['bigTitle'] = "Upload Books";
-		$data['body'] = "admin/uploadbook";
-		$data['headerCss'] = "admin/headerCss/studentRegisterCss";
-		$data['footerJs'] = "admin/footerJs/studentRegisterJs";
-		$this->load->view("include/admin/mainContent",$data);
-	}
-	public function uploadpdf(){
-		$data['title'] = "Upload PDF";
-		$data['smallTitle'] = "Website/Upload PDF";
-		$data['bigTitle'] = "Upload PDF";
-		$data['body'] = "admin/uploadpdf";
-		$data['headerCss'] = "admin/headerCss/studentRegisterCss";
-		$data['footerJs'] = "admin/footerJs/studentRegisterJs";
-		$this->load->view("include/admin/mainContent",$data);
-	}
-	public function quickContact(){
-		$data['title'] = "Quick Contact";
-		$data['smallTitle'] = "Website/Quick Contact";
-		$data['bigTitle'] = "Quick Contact";
-		$data['body'] = "admin/quickContact";
-		$data['headerCss'] = "admin/headerCss/studentListCss";
-		$data['footerJs'] = "admin/footerJs/studentListJs";
-		$this->load->view("include/admin/mainContent",$data);
-	}
 	
-	public function gitouch(){
-		$data['title'] = "Get in touch";
-		$data['smallTitle'] = "Website/Get in touch";
-		$data['bigTitle'] = "Get in touch";
-		$data['body'] = "admin/gitouch";
-		$data['headerCss'] = "admin/headerCss/studentListCss";
-		$data['footerJs'] = "admin/footerJs/studentListJs";
-		$this->load->view("include/admin/mainContent",$data);
-	}
+	
+	
 	
 	public function gallery(){
 		$data['title'] = "Gallery";

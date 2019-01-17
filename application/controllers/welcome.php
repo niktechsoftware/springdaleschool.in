@@ -132,7 +132,7 @@ function regisenquiry()
 	$r=$this->input->post("meducation");
 	$s=$this->input->post("mlanguage");
 $data=array(
-'sname'=>$a,'dob'=>$b,'age'=>$c,'addforclass'=>$d,'gender'=>$e,'nation'=>$f,'father'=>'FATHER NAME','fname'=>$g,'foccupation'=>$h,'fedu'=>$i,'flanguage'=>$j,'resiaddress'=>$k,'contactdetail'=>$l,'phone'=>$m,'mobile'=>$n,'email'=>$o,'MOTHER'=>'MOTHER NAME','mname'=>$p,'moccupation'=>$q,'meducation'=>$r,'mlanguage'=>$s
+'sname'=>$a,'dob'=>$b,'age'=>$c,'addforclass'=>$d,'gender'=>$e,'nation'=>$f,'fname'=>$g,'foccupation'=>$h,'fedu'=>$i,'flanguage'=>$j,'resiaddress'=>$k,'contactdetail'=>$l,'phone'=>$m,'mobile'=>$n,'email'=>$o,'mname'=>$p,'moccupation'=>$q,'meducation'=>$r,'mlanguage'=>$s
 );
 
 $a=$this->db->insert("regenquiry",$data);
@@ -164,40 +164,12 @@ function saveenquiry(){
 		);
 		$this->load->helper('sms');
 		sms($contact,$comments);
-		$this->db->insert("carrer",$data);
-
-		/* if($this->db->insert("carrer",$data)){
-		
-			
-			$ci = get_instance();
-					$ci->load->library('email');
-					$config['protocol'] = "smtp";
-					$config['smtp_host'] = "mail.springdaleschool.in";
-					$config['smtp_port'] = "587";
-					$config['smtp_user'] = "info@springdaleschool.in"; 
-					$config['smtp_pass'] = "kanpur12!@";
-					$config['charset'] = "utf-8";
-					$config['mailtype'] = "html";
-					$config['newline'] = "\r\n";
-					
-					$ci->email->initialize($config);
-					
-					$ci->email->from('info@springdaleschool.in', 'Sharad singh');
-					$list = array('sharadrai99@gmail.com,springdalejuniorhighschool2512@gmail.com,singhkullu12@gmail.com');
-					$ci->email->to($email);
-					$this->email->reply_to('sharadrai99@gmail.com', 'Website Contect');
-					$ci->email->subject('website enquiry ');
-					$ci->email->message($msg);
-					$ci->email->send();
-				echo "rahul";
-			redirect(base_url()."index.php/welcome/contactus/success");
+		$a=$this->db->insert("carrer",$data);
+		if($a)
+		{
+			redirect("welcome/contactus");
 		}
-		else{
-			echo "something is wrong";
-		}*/
-		
 
-			
 		
 	}
 	function syllabus(){
@@ -207,12 +179,7 @@ function saveenquiry(){
 		$this->load->view("include/template",$data);
 	}
 	
-	function summerhomework(){
-		$data['pagename'] = "Download Holidays HomeWork";
-		$data['title'] = "Spring Dale School";
-		$data['body'] = "shomework";
-		$this->load->view("include/template",$data);
-	}
+	
 	
 	function admissionPro(){
 	$data['pagename'] = "Manager Desk";
