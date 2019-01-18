@@ -41,13 +41,15 @@ public function directorDesk()
 	$data['body'] = "directorDesk";
 	$this->load->view("include/template",$data);
 	}
-	public function campus(){
+	public function campus()
+	{
 	$data['pagename'] = "Director Desk";
 	$data['title'] = "Spring Dale School";
 	$data['body'] = "campus";
 	$this->load->view("include/template",$data);
 	}
-	public function games(){
+	public function games()
+	{
 	$data['pagename'] = "Director Desk";
 	$data['title'] = "Spring Dale School";
 	$data['body'] = "games";
