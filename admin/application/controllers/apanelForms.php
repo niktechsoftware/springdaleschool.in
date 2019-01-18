@@ -285,7 +285,7 @@ class ApanelForms extends CI_Controller{
 			$image_path = realpath(APPPATH . '../assets/images');
 			$config['upload_path'] = $image_path;
 			$config['allowed_types'] = 'gif|jpg|jpeg|png';
-			$config['max_size'] = '2048';
+			$config['max_size'] = '6048';
 			$config['file_name'] = $photo_name;
 		}
 		if (!empty($_FILES['selectedStu']['name'])) {
@@ -313,7 +313,7 @@ function savegames(){
 			$image_path = realpath(APPPATH . '../assets/images');
 			$config['upload_path'] = $image_path;
 			$config['allowed_types'] = 'gif|jpg|jpeg|png';
-			$config['max_size'] = '2048';
+			$config['max_size'] = '6048';
 			$config['file_name'] = $photo_name;
 		}
 		if (!empty($_FILES['selectedStu']['name'])) {

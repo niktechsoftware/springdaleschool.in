@@ -2,11 +2,11 @@
 		<div id="slide-container"  class="clearfix">
 			<div id="slider-wrapper" class="left">
 				<div id="slider" class="nivoSlider">
-				<img src="<?php echo base_url(); ?>assets/img/stock/sharad.jpg" alt="image 1" /> 
-				<img src="<?php echo base_url(); ?>assets/img/stock/slide-image-1.jpg" alt="image 1" /> 
-				<img src="<?php echo base_url(); ?>assets/img/stock/slide-image-2.jpg" alt=""  />
-				<img src="<?php echo base_url(); ?>assets/img/stock/slide-image-3.jpg" alt="" />
-				<img src="<?php echo base_url(); ?>assets/img/stock/slide-image-4.jpg" alt="" title="#htmlcaption" /> </div>
+				<img src="<?php echo base_url(); ?>assets/img/stock/sharad.jpg" alt="image 1" style="height:200px; width:400px;" /> 
+				<img src="<?php echo base_url(); ?>assets/img/stock/slide-image-5.jpg" alt="image 1" style="height:200px; width:420px;"/> 
+				<!--<img src="<?php echo base_url(); ?>assets/img/stock/slide-image-u.jpg" alt="" style="height:200px; width:400px;" />-->
+				<img src="<?php echo base_url(); ?>assets/img/stock/slide-image-bc.jpg" alt="" style="height:200px; width:400px;"/>
+				<!--<img src="<?php echo base_url(); ?>assets/img/stock/slide-image-4.jpg" alt="" title="#htmlcaption" style="height:200px; width:400px;" /> --></div>
 				
 			<div id="quickmenu" class="left">
 				<h2 class="replace">Our School</h2>
