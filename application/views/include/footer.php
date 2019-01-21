@@ -29,7 +29,7 @@
 					<li><a href="#"><img src="<?php echo base_url(); ?>assets/img/flickr.png" alt="Flickr"  /></a></li>
 				</ul>
 			</div>
-			<div id="footer-bottom"> <div id="toTop" class="left">Back to Top</div><center><div><h5>SITE VISITORS:</h5><h5><?php echo $this->count_visitor;?></h5></div></center><div id="footer-note" class="right"><small>©2016 Theme by <strong>Niktech software solution</strong></small></div>
+			<div id="footer-bottom"> <div id="toTop" class="left">Back to Top</div><center><!--<div><h5>SITE VISITORS:</h5><h5><?php echo $this->count_visitor;?></h5></div>--></center><div id="footer-note" class="right"><small>©2016 Theme by <strong>Niktech software solution</strong></small></div>
 				
 			</div>
 		</div>
