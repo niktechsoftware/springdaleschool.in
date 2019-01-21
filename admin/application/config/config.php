@@ -16,7 +16,7 @@
 | environments.
 |
 */
-$config['base_url'] = 'http://localhost/springdaleschool.in/admin/';
+$config['base_url'] = 'http://springdaleschool.in/admin/';
 
 /*
 |--------------------------------------------------------------------------
