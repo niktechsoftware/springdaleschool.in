@@ -49,9 +49,9 @@ Spring Dale School adheres to quality Management System in line with ISO 9001 :2
 					 <marquee direction="up" height="300"  behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();">
 					
 					<?php $ft = $this->db->get("notice");
-					$i=1;	if($ft->num_rows()>0){
-							foreach($ft->result() as $ft):?>
-                        	<b><p style="color:green;" class="landing_col"><?php echo $i;?>.<?php echo $ft->message;?><br></p></b>
+					$i=1;	//if($ft->num_rows()>0){
+							foreach($ft->result() as $ftt):?>
+                        	<b><p style="color:green;" class="landing_col"><?php echo $i;?>.<?php echo $ftt->message;?><br></p></b>
 							<?php $i++; endforeach;
 							}
 							?>
