@@ -53,7 +53,7 @@ Spring Dale School adheres to quality Management System in line with ISO 9001 :2
 							foreach($res as $row):?>
                         	<!--<b><p style="color:green;" class="landing_col">--><?php echo $i;?>.<?php echo $row->message;?><!--<br></p></b>-->
 							<?php $i++; endforeach;
-							}
+							
 							?>
 					 
                         </marquee>
