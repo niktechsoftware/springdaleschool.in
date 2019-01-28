@@ -5,8 +5,8 @@ class LoginModel extends CI_Model{
 		// get username password and check is it for admin,employee or student.
 		
 		// check is it for admin
-        $this->db->where("admin_username", $this->input->post("uname"));
-        $this->db->where("admin_password", md5($this->input->post("password")));
+        $this->db->where("username", $this->input->post("uname"));
+        $this->db->where("password", md5($this->input->post("password")));
         $general = $this->db->get("general_settings");
         $res = $general->row();
         if($general->num_rows >= 1){
