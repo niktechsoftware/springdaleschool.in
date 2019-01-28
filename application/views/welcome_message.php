@@ -47,17 +47,14 @@ Spring Dale School adheres to quality Management System in line with ISO 9001 :2
 				<div class="col_201">
 					<h3 class="replace">Notice Board</h3>
 					 <marquee direction="up" height="300"  behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();">
-					1).
-					<a href="<?php echo base_url();?>welcome/summerhomework"  target="_blank"> Download  School Holidays Homework.</a><br><br>
-					<b><p style="color:green;" class="landing_col"><a href="<?php echo base_url();?>assets/img/sa1.pdf"> 2). Download Time Table for SA-1 Examination .</a><br><img src="<?php echo base_url(); ?>assets/img/new.png" height="30" width="50" alt="ad" /></p></b></a></p></b>
 					<?php $ft = $this->db->get("notice");
 					$i=1;	if($ft->num_rows()>0){
-?><table>
+?><table><?php
 
 							foreach($ft->result() as $ft):?>
 	                        	<tr><td><b><p style="color:green;" class="landing_col"><?php echo $i;?>.<?php echo $ft->message;?><br></p></b></td></tr>
-							<?php $i++; endforeach;
-							}
+		<?php $i++; endforeach;
+							
 							?>
 					 </table>
                         </marquee>
