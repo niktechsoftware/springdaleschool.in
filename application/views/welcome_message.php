@@ -129,7 +129,9 @@ Spring Dale School adheres to quality Management System in line with ISO 9001 :2
 				else
 				{?>
                 	<h2 style="color:#F00">No Record Found<?php echo date('Y-m-d');?></h2>
-                 <?php }?>
+                 <?php }
+             }
+                 ?>
 							
 					</div>
 				</div>
