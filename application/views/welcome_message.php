@@ -1,4 +1,4 @@
-		<!-- slide start --><marquee  bgcolor=orange width=960 height=25> Note : The School Office will be open at 08.00A.M. To 3.00P.M. Every Day. Admission Open for  Academic Session 2018-19.</marquee>
+		<!-- slide start --><marquee  bgcolor=orange width=960 height=25> Note : The School Office will be open at 08.00A.M. To 3.00P.M. Every Day. Admission Open for  Academic Session 2019-20.</marquee>
 		<div id="slide-container"  class="clearfix">
 			<div id="slider-wrapper" class="left">
 				<div id="slider" class="nivoSlider">
@@ -47,15 +47,17 @@ Spring Dale School adheres to quality Management System in line with ISO 9001 :2
 				<div class="col_201">
 					<h3 class="replace">Notice Board</h3>
 					 <marquee direction="up" height="300"  behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();">
-					
-					<?php $res = $this->db->get("notice")->result();
-					$i=1;	//if($ft->num_rows()>0){
-							foreach($res as $row):?>
-                        	<!--<b><p style="color:green;" class="landing_col">--><?php echo $i;?>.<?php echo $row->message;?><!--<br></p></b>-->
-							<?php $i++; endforeach;
+					<?php $ft = $this->db->get("notice");
+					$i=1;	if($ft->num_rows()>0){
+?><table><?php
+
+							foreach($ft->result() as $ft):?>
+	                        	<tr><td><b><p style="color:green;" class="landing_col"><?php echo $i;?>.<?php echo $ft->message;?><br></p></b></td></tr>
+		<?php $i++; endforeach;
 							
 							?>
-					 
+					 </table>
+					 <?php }?>
                         </marquee>
 				
 					</div>
