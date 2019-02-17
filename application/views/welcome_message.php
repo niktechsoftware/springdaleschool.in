@@ -20,9 +20,9 @@
 							Craft | Dance | Sport<span class="arrow"></span> </a></li>
 						<li><a href="<?php echo base_url(); ?>index.php/welcome/schoolStaff" class="menu-box round_4"> <span class="title">School Staff</span><br/>
 						Teacher | Others	<span class="arrow"></span> </a></li>
-						<li><a href="#" class="menu-box round_4"> <span class="title">School Details</span><br/>
+						<li><a href="<?php echo base_url(); ?>index.php/welcome/hostelform" class="menu-box round_4"> <span class="title">Hostel Form Detail</span><br/>
 							<span class="arrow"></span> </a></li>
-						
+				
 					</ul>
 				</div>
 				<a class="buttons prev" href="#">Prev</a> <a class="buttons next" href="#">Next</a> </div>
@@ -52,7 +52,7 @@ Spring Dale School adheres to quality Management System in line with ISO 9001 :2
 ?><table><?php
 
 							foreach($ft->result() as $ft):?>
-	                        	<tr><td><b><p style="color:green;" class="landing_col"><?php echo $i;?>.<?php echo $ft->message;?><br></p></b></td></tr>
+	                        	<b><p style="color:green;" class="landing_col"><?php echo $i;?>.<?php echo $ft->message;?><br></p></b>
 		<?php $i++; endforeach;
 							
 							?>

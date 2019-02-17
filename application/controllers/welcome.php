@@ -56,6 +56,15 @@ public function directorDesk()
 	$this->load->view("include/template",$data);
 	}
 
+	public function hostelform()
+	{
+		$data['pagename'] = "Director Desk";
+	$data['title'] = "Spring Dale School";
+	$data['body'] = "hostelform";
+	$this->load->view("include/template",$data);
+
+	}
+
 
 public function chairmanDesk(){
 	$data['pagename'] = "Chairman Desk";
