@@ -11,10 +11,4 @@
 <center><img src="<?php echo base_url();?>assets/img/app4.jpg" style="max-height:700px;min-width:700px"></center>
 
 <center><img src="<?php echo base_url();?>assets/img/app5.jpg" style="max-height:700px;min-width:700px"></center>
-
-
-    <center>
-        
-    
-        <a href="<?php base_url();?>printhostelform" class="btn btn-danger"><span style="font-size:40px;">Print</span></a></center></div>
-<br><br><br>
+</div>

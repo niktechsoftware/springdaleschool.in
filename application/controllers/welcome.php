@@ -156,7 +156,11 @@ if($a)
 }
 
 
-
+function printhostelform()
+{
+    
+    $this->load->view('printhostelform');
+}
 
 function saveenquiry(){
 	$name = $this->input->post("name");
