@@ -48,11 +48,12 @@ Spring Dale School adheres to quality Management System in line with ISO 9001 :2
 					<h3 class="replace">Notice Board</h3>
 					 <marquee direction="up" height="300"  behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();">
 					<?php $ft = $this->db->get("notice");
+
 					$i=1;	if($ft->num_rows()>0){
 ?><table><?php
-
+		
 							foreach($ft->result() as $ft):?>
-	                        	<b><p style="color:green;" class="landing_col"><?php echo $i;?>.<?php echo $ft->message;?><br></p></b>
+	                        	<b><p style="color:green;" class="landing_col"><?php echo $i;?>.<?php echo $ft->message;?></p></b>
 		<?php $i++; endforeach;
 							
 							?>
