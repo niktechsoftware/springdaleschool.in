@@ -362,7 +362,7 @@ function savegames(){
 function saveStaff(){
 		$photo_name = time().trim($_FILES['selectedStu']['name']);
 		$data=array(
-				'name'=>$this->input->post("name"),
+				'first_name'=>$this->input->post("name"),
 					'gender'=>$this->input->post("gender"),
 						'mobile'=>$this->input->post("mobile"),
 				'photo'=>$photo_name,

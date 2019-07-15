@@ -221,23 +221,12 @@
 		  		<th>Subjects</th>
 		  		<?php 	$this->db->distinct();
 		  			$this->db->select("exam_name");
-		  			$this->db->where("fsd",$fsd);
-		  			$examName = $this->db->get("exam_info")->result();
+		  		//	$this->db->where("fsd",$fsd);
+		  			$examName = $this->db->get("exam_name")->result();
 		  			foreach($examName as $examName1):?>
 		  		<th>
 		  		
-		  		<?php if(($examName1->exam_name=="SUMMATIVE_ASSESSMENT-1st")||($examName1->exam_name=="FORMATIVE_ASSESSMENT-III")||($examName1->exam_name=="SUMMATIVE_ASSESSMENT-2nd")){
-		  		
-		  	if($examName1->exam_name=="SUMMATIVE_ASSESSMENT-1st"){	
-echo "SA-1";}
-if($examName1->exam_name=="FORMATIVE_ASSESSMENT-III"){
-echo "F.A.III";
-}
-if($examName1->exam_name=="SUMMATIVE_ASSESSMENT-2nd"){
-echo "SA-2";
-}
-
-}else{echo $examName1->exam_name;}?>
+		  		<?php if($examName1->exam_name=="AnnualExam18-19"){ echo "Annual Exam";} else{ if($examName1->exam_name=="UnitTest-2") {echo "Unit Test -2"; }else{echo $examName1->exam_name;}}?>
 				</th>
 				<?php endforeach;?>
 				<th>
@@ -272,8 +261,8 @@ echo "SA-2";
 		  			echo "<td>".$row->subject."</td>";
 		  			$this->db->distinct();
 		  			$this->db->select("exam_name");
-		  			$this->db->where("fsd",$fsd);
-		  			$examName = $this->db->get("exam_info")->result();
+		  		//	$this->db->where("fsd",$fsd);
+		  			$examName = $this->db->get("exam_name")->result();
 		  			foreach($examName as $ex):
 		  			$this->db->where("created > ",$fsd);
 		  			$this->db->where("created < ",$futureDate);
@@ -357,7 +346,7 @@ echo "SA-2";
 					  				$val = $result->marks;
 					  			}else{
 					  				$val = 0;
-					  			}echo "<td  style='text-align: center;'><table ><tr><td style='border-left:none;border-bottom:none;border-top:none; width:37%;'>".$result->marks."</td><td style='border-right:none;border-bottom:none;border-top:none; width:37%;'>".$result->out_of."</td></tr></table></td>";
+					  			}echo "<td><table><tr><td style='border-left:none; border-bottom:none; border-top:none; width:37%;'>".$result->marks."</td><td style='border-right:none;border-bottom:none;border-top:none; width:37%;'>".$result->out_of."</td></tr></table></td>";
 					  			
 					  			$total = $total + $result->marks;
 					  		}else{ 
@@ -375,7 +364,7 @@ echo "SA-2";
 				  		
 				  		
 				  		?>
-				  		<td><table ><tr><td style="border-left:none;border-bottom:none;border-top:none; width:35%;"><?php if($rowtot > 9 ){echo $rowtot;}else{echo "0".$rowtot; }?></td><td style="border-right:none;border-bottom:none;border-top:none; width:35%;"><?php echo $totoutofrow;?></td></tr></table>
+				  		<td><table><tr><td style="border-left:none;border-bottom:none;border-top:none; width:35%;"><?php if($rowtot > 9 ){echo $rowtot;}else{echo "0".$rowtot; }?></td><td style="border-right:none;border-bottom:none;border-top:none; width:35%;"><?php echo $totoutofrow;?></td></tr></table>
 				  </td>	<?php 	$j = 1;	$rowtot=0;
 				  		$totoutofrow=0;			  		
 		  			echo '</tr>';
@@ -387,9 +376,10 @@ echo "SA-2";
 		  				</td>
 			  		<td><table ><tr><td style="border-left:none;border-bottom:none;border-top:none; width:35%;"><?php echo $tot2;?></td><td style="border-right:none;border-bottom:none;border-top:none; width:35%;"><?php echo $gross2;?></td></tr></table>
 		  				</td>
+		  			
 		  				
 		  				<?php $gtu=$gross3+$gross2+$gross1;?>
-		  				<td><table ><tr><td style="border-left:none;border-bottom:none;border-top:none; width:35%;"><?php echo $tot3+$tot1+$tot2;?></td><td style="border-right:none;border-bottom:none;border-top:none; width:35%;"><?php echo $gross3+$gross2+$gross1;?></td></tr></table>
+		  				<td><table ><tr><td style="border-left:none;border-bottom:none;border-top:none; width:35%;"><?php echo $tot1+$tot2;?></td><td style="border-right:none;border-bottom:none;border-top:none; width:35%;"><?php echo $gross2+$gross1;?></td></tr></table>
 		  				</td>
 		  				
 		  			

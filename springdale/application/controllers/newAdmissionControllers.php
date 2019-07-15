@@ -16,7 +16,7 @@ class newAdmissionControllers extends CI_Controller{
 		$this->form_validation->set_rules('dob','Date of birth', 'trim|required');
 		$this->form_validation->set_rules('classOfAdmission','Class of Admission', 'trim|required');
 		$this->form_validation->set_rules('section','Section', 'trim|required');
-		$this->form_validation->set_rules('gender','Gende', 'trim');
+		$this->form_validation->set_rules('gender','Gende', 'trim');`
 		$this->form_validation->set_rules('bloodGroup','', 'trim');
 		$this->form_validation->set_rules('birthPlace','', 'trim');
 		$this->form_validation->set_rules('nationality','', 'trim');

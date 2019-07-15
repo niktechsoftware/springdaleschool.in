@@ -146,7 +146,7 @@ $data=array(
 'sname'=>$a,'dob'=>$b,'age'=>$c,'addforclass'=>$d,'gender'=>$e,'nation'=>$f,'fname'=>$g,'foccupation'=>$h,'fedu'=>$i,'flanguage'=>$j,'resiaddress'=>$k,'contactdetail'=>$l,'phone'=>$m,'mobile'=>$n,'email'=>$o,'mname'=>$p,'moccupation'=>$q,'meducation'=>$r,'mlanguage'=>$s,'date'=>date('y-m-d')
 );
 
-$a=$this->db->insert("regenquiry",$data);
+$a=$this->db->insert("gfincuct_springAdmin.regenquiry",$data);
 if($a)
 {
 
@@ -177,9 +177,8 @@ function saveenquiry(){
 				'enquiry_date'=>date("Y-m-d"),
 				'response'=>"NO"
 		);
-		$this->load->helper('sms');
-		sms($contact,$comments);
-		$a=$this->db->insert("carrer",$data);
+	
+		$a=$this->db->insert("gfincuct_springAdmin.carrer",$data);
 		if($a)
 		{
 			redirect("welcome/contactus");

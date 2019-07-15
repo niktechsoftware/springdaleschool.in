@@ -66,7 +66,7 @@
                                         	<?php foreach($res as $row):?>
                                             <tr>
                                                 <td><?php echo $row->id; ?></td>
-                                                <td><?php echo $row->name; ?></td>
+                                                <td><?php echo $row->first_name." ".$row->mid_name." ".$row->last_name; ?></td>
                                                  <td><?php echo $row->gender; ?></td>
 
                                                   <td><?php echo $row->mobile; ?></td>

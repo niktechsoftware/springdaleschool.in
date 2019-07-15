@@ -14,62 +14,67 @@
             </thead>
             <tbody>
              
+            <!--<tr>-->
+            <!--<td> 1</td>-->
+            <!--<td> Play Group</td>-->
+            <!--<td> <a href="<?php //echo base_url();?>assets/sly/pg.jpg"><span>Click for View file </span></a>-->
+            
+            <!--</td>-->
+            <!--</tr>-->
             <tr>
             <td> 1</td>
-            <td> Play Group</td>
-            <td> <a href="<?php echo base_url();?>assets/sly/pg.jpg"><span>Click for View file </span></a>
-            
-            </td>
-            </tr>
-            <tr>
-            <td> 2</td>
             <td> Nursery</td>
-            <td> <a href="<?php echo base_url();?>assets/sly/nur.jpg"><span>Click for View file </span></a></td>
+            <td> <a href="<?php echo base_url();?>assets/sly/nursary.jpg"><span>Click for View file </span></a></td>
             </tr>
         <tr>
-            <td> 3</td>
+            <td> 2</td>
             <td> LKG</td>
-            <td> <a href="<?php echo base_url();?>assets/sly/lkg.jpg"><span>Click for View file </span></a></td>
+            <td> <a href="<?php echo base_url();?>assets/sly/lkgclass.jpg"><span>Click for View file </span></a></td>
+            </tr>
+            <tr>
+            <td> 3</td>
+            <td> UKG</td>
+            <td> <a href="<?php echo base_url();?>assets/sly/ukgclass.jpg"><span>Click for View file </span></a></td>
             </tr>
             <tr>
             <td> 4</td>
-            <td> UKG</td>
-            <td> <a href="<?php echo base_url();?>assets/sly/ukg.jpg"><span>Click for View file </span></a></td>
-            </tr>
-            <tr>
-            <td> 5</td>
             <td> class I</td>
-            <td> <a href="<?php echo base_url();?>assets/sly/class1.jpg"><span>Click for View file </span></a></td>
+            <td> <a href="<?php echo base_url();?>assets/sly/class1st.jpg"><span>Click for View file </span></a></td>
             </tr>
              <tr>
-            <td> 6</td>
+            <td> 5</td>
             <td> class II</td>
-            <td> <a href="<?php echo base_url();?>assets/sly/class2.jpg"><span>Click for View file </span></a></td>
+            <td> <a href="<?php echo base_url();?>assets/sly/class2nd.jpg"><span>Click for View file </span></a></td>
+            </tr>
+             <tr>
+            <td>6</td>
+            <td> class III</td>
+            <td> <a href="<?php echo base_url();?>assets/sly/class3rd.jpg"><span>Click for View file </span></a></td>
             </tr>
              <tr>
             <td> 7</td>
-            <td> class III</td>
-            <td> <a href="<?php echo base_url();?>assets/sly/class3.jpg"><span>Click for View file </span></a></td>
+            <td> class IV</td>
+            <td> <a href="<?php echo base_url();?>assets/sly/class4th.jpg"><span>Click for View file </span></a></td>
             </tr>
              <tr>
             <td> 8</td>
-            <td> class IV</td>
-            <td> <a href="<?php echo base_url();?>assets/sly/class4.jpg"><span>Click for View file </span></a></td>
-            </tr>
-             <tr>
-            <td> 9</td>
             <td> class V</td>
-            <td> <a href="<?php echo base_url();?>assets/sly/class5.jpg"><span>Click for View file </span></a></td>
+            <td> <a href="<?php echo base_url();?>assets/sly/class5th.jpg"><span>Click for View file </span></a></td>
+            </tr>
+            <tr>
+            <td>9</td>
+            <td> class VI</td>
+            <td> <a href="<?php echo base_url();?>assets/sly/class6th.jpg"><span>Click for View file </span></a></td>
             </tr>
             <tr>
             <td> 10</td>
-            <td> class VI</td>
-            <td> <a href="<?php echo base_url();?>assets/sly/class6.jpg"><span>Click for View file </span></a></td>
-            </tr>
-<tr>
-            <td> 11</td>
             <td> class VII</td>
-            <td> <a href="<?php echo base_url();?>assets/sly/class7.jpg"><span>Click for View file </span></a></td>
+            <td> <a href="<?php echo base_url();?>assets/sly/class7th.jpg"><span>Click for View file </span></a></td>
+            </tr>
+            <tr>
+            <td> 11</td>
+            <td> class VIII</td>
+            <td> <a href="<?php echo base_url();?>assets/sly/class8th.jpg"><span>Click for View file </span></a></td>
             </tr>
             
             </tbody>

@@ -129,7 +129,7 @@
 				<td style="border: none;">
 					
 						<h2  style="border: 1px solid #000; padding: 2px; width: 250px; margin-left:185px;">
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit Test-2 (2018-19)<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ANNUAL EXAM (2018-19)<br>
 							&nbsp;&nbsp;&nbsp;&nbsp;Admit Card : <?php echo $rowc->class_id.'-'.$rowc->section ; ?>
 						</h2>
 					
@@ -177,12 +177,12 @@
                    
             </table>
             </div>
-            <?php $this->db->where("exam_name","UnitTest-2");
+            <?php $this->db->where("exam_name","AnnualExam18-19");
             $shift=$this->db->get("exam_shift")->result();
             
             $this->db->distinct();
             $this->db->select("date1");
-            $this->db->where("exam_name","UnitTest-2");
+            $this->db->where("exam_name","AnnualExam18-19");
             $this->db->where("class1",$rowc->class_id);
             $this->db->order_by("date1","asc");
              $exam_day=$this->db->get("exam_time_table")->result();?>
@@ -203,7 +203,7 @@
 							$this->db->where("class1",$rowc->class_id);
 						$this->db->where("shift",$s->shift);
 						
-						$this->db->where("exam_name","UnitTest-2");
+						$this->db->where("exam_name","AnnualExam18-19");
 						 $this->db->where("date1","$ed->date1");
 						$etb = $this->db->get("exam_time_table");
 						if($etb->num_rows()>0){
@@ -227,12 +227,12 @@
 			</table>
 			
 			</br>
-		<div align="left"><h3>&nbsp;Note: 1) First Shift timing is 09:00AM to 11:00AM and Second shift is 11:15 to 01:15PM.<br>
+		<div align="left"><h3>&nbsp;Note: 1) First Shift timing is 09:30AM to 11:30AM and Second shift is 11:45AM to 01:00PM.<br>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) Reporting time for the student at the class on the day of
-examination is between 08:20 A.M. to 08:50 A.M.  </br>
+examination is between 09:20 A.M.  </br>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) Students are strictly advised not to bring any illegal paper.</br>
 		
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4) The Result will be declared on 22.12.2018.</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4) The Result will be declared on 23.03.2019.</br>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5) Students,whose dues are not cleared fully,will not be allowed to appear for the examination.</br>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6) No Re- exam  , students who are absent for any paper.</div>
 		</h3>

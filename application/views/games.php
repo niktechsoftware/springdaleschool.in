@@ -6,7 +6,7 @@
             </div>
             <h2>Games&Sports</h2>
    <div>   
- <?php $val = $this->db->get("games"); 
+ <?php $val = $this->db->get("gfincuct_springAdmin.games"); 
    if($val->num_rows()>0)
    {
    $i=1;

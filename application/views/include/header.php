@@ -54,6 +54,7 @@
 				
 				<li> <a href="<?php echo base_url(); ?>welcome/contactus">Contact Us</a></li>
 				<li> <a href="<?php echo base_url(); ?>admin/">Admin</a></li>
+			
 			</ul>
 			<!-- Navigation end --> 
 		</div>

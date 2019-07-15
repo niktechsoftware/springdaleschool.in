@@ -34,6 +34,7 @@ class LoginModel extends CI_Model{
         }
         
         // check is it for employee
+          $this->db->where("status","Active");
         $this->db->where("emp_no",$this->input->post("username"));
         $this->db->where("password",$this->input->post("password"));
         $query = $this->db->get("employee_info");

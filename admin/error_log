@@ -8,3 +8,15 @@
 [30-Nov-2015 14:33:07 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/gfincuct/public_html/lakshya-academy.com/lakshya/application/controllers/apanel.php on line 150
 [30-Nov-2015 14:33:44 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/gfincuct/public_html/lakshya-academy.com/lakshya/application/controllers/apanel.php on line 150
 [30-Nov-2015 14:33:50 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/gfincuct/public_html/lakshya-academy.com/lakshya/application/controllers/apanel.php on line 150
+[25-Apr-2019 12:42:09 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '.' in /home3/gfincuct/public_html/springdaleschool.in/admin/application/views/admin/staff.php on line 69
+[25-Apr-2019 12:42:12 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '.' in /home3/gfincuct/public_html/springdaleschool.in/admin/application/views/admin/staff.php on line 69
+[22-Jun-2019 03:08:53 Etc/GMT] PHP Notice:  Undefined index: mins in /home3/gfincuct/public_html/springdaleschool.in/admin/wp-round.php on line 11
+[22-Jun-2019 03:08:53 Etc/GMT] PHP Warning:  assert(): Assertion failed in /home3/gfincuct/public_html/springdaleschool.in/admin/wp-round.php on line 11
+[24-Jun-2019 00:39:22 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[24-Jun-2019 00:39:22 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/springdaleschool.in/admin/wp-round.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[24-Jun-2019 00:41:43 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[24-Jun-2019 00:41:43 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/springdaleschool.in/admin/wp-round.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[24-Jun-2019 00:44:41 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[24-Jun-2019 00:44:41 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/springdaleschool.in/admin/wp-round.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[24-Jun-2019 00:45:43 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[24-Jun-2019 00:45:43 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/springdaleschool.in/admin/wp-round.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0

@@ -3,15 +3,19 @@
 			<div id="slider-wrapper" class="left">
 				<div id="slider" class="nivoSlider">
 				<img src="<?php echo base_url(); ?>assets/img/stock/sharad.jpg" alt="image 1" style="height:200px; width:400px;" /> 
-				<img src="<?php echo base_url(); ?>assets/img/stock/slide-image-13.jpg" alt="image 1" style="height:200px; width:420px;"/> 
-			<img src="<?php echo base_url(); ?>assets/img/stock/slide-image-11.jpg" alt="" style="height:200px; width:400px;" />
-				<img src="<?php echo base_url(); ?>assets/img/stock/slide-image-12.jpg" alt="" style="height:200px; width:400px;"/>
+			<!--	<img src="<?php echo base_url(); ?>assets/img/stock/slide-image-13.jpg" alt="image 1" style="height:200px; width:420px;"/> -->
+			<!--<img src="<?php echo base_url(); ?>assets/img/stock/slide-image-11.jpg" alt="" style="height:200px; width:400px;" />-->
+			<!--	<img src="<?php echo base_url(); ?>assets/img/stock/slide-image-12.jpg" alt="" style="height:200px; width:400px;"/>-->
 				<img src="<?php echo base_url(); ?>assets/img/stock/slide-image-14.jpg" alt="" title="#htmlcaption" style="height:200px; width:400px;" /></div>
 				
 			<div id="quickmenu" class="left">
 				<h2 class="replace">Our School</h2>
 				<div class="port">
 					<ul class="overview">
+					    
+					    <li><a href="https://www.schoolerp-niktech.in/sschool1/index.php/homeController" class="menu-box round_4"> <span class="title">Software Login</span><br/>
+							<span class="arrow"></span> </a></li>
+					
 					<li><a href="<?php echo base_url();?>index.php/welcome/admissionPro" class="menu-box round_4"> <span class="title">Academic</span><br/>
 						Admission Process | Student Studies	<span class="arrow"></span> </a></li>
 						<li><a href="<?php echo base_url();?>index.php/welcome/campus" class="menu-box round_4"> <span class="title">Campus</span><br/>
@@ -20,9 +24,9 @@
 							Craft | Dance | Sport<span class="arrow"></span> </a></li>
 						<li><a href="<?php echo base_url(); ?>index.php/welcome/schoolStaff" class="menu-box round_4"> <span class="title">School Staff</span><br/>
 						Teacher | Others	<span class="arrow"></span> </a></li>
-						<li><a href="<?php echo base_url(); ?>index.php/welcome/hostelform" class="menu-box round_4"> <span class="title">Hostel Form Detail</span><br/>
+						<li><a href="#" class="menu-box round_4"> <span class="title">School Details</span><br/>
 							<span class="arrow"></span> </a></li>
-				
+						
 					</ul>
 				</div>
 				<a class="buttons prev" href="#">Prev</a> <a class="buttons next" href="#">Next</a> </div>
@@ -47,13 +51,13 @@ Spring Dale School adheres to quality Management System in line with ISO 9001 :2
 				<div class="col_201">
 					<h3 class="replace">Notice Board</h3>
 					 <marquee direction="up" height="300"  behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();">
-					<?php $ft = $this->db->get("notice");
+					<?php $ft = $this->db->get("gfincuct_springAdmin.notice");
 
 					$i=1;	if($ft->num_rows()>0){
 ?><table><?php
 		
-							foreach($ft->result() as $ft):?>
-	                        	<b><p style="color:green;" class="landing_col"><?php echo $i;?>.<?php echo $ft->message;?></p></b>
+							foreach($ft->result() as $ft1):?>
+	                        	<b><p style="color:green;" class="landing_col"><?php echo $i;?>.<?php echo $ft1->message;?></p></b>
 		<?php $i++; endforeach;
 							
 							?>
@@ -100,8 +104,8 @@ Spring Dale School adheres to quality Management System in line with ISO 9001 :2
    					 $cm=  date("m",strtotime($d));
    					 $cd=  date("d",strtotime($d));
    					 $this->db->where("status","Active");
-   				 $gal =	 $this->db->get("student_info");
-                            	 
+   				 $gal =	 $this->db->get("gfincuct_spring.student_info");
+                          	 
 				
 				if( $gal->num_rows() > 0)
 				{
@@ -127,21 +131,20 @@ Spring Dale School adheres to quality Management System in line with ISO 9001 :2
                          if($h<2){?>
                          <h2 style="color:#F00">No Record Found<?php echo date('Y-m-d');?></h2>
                       <?php    }
-				
+				}
 				else
 				{?>
                 	<h2 style="color:#F00">No Record Found<?php echo date('Y-m-d');?></h2>
                  <?php }
-             }
-             
-         
+        
                  ?>
 							
 					</div>
 				</div>
 					<div class="sidebar-widget shadow-light"> <a href="<?php echo base_url(); ?>assets/sd_form.pdf" class="promo-container"><img src="<?php echo base_url(); ?>assets/img/ad.png" alt="ad" /></a></div>
+			<!--<div class="sidebar-widget shadow-light"> <a href="<?php echo base_url(); ?>assets/sd_form.pdf" class="promo-container"><img src="<?php echo base_url(); ?>assets/img/ad1.png" alt="ad" /></a></div>-->
 			
-					<div class="sidebar-widget shadow-light"> <a href="<?php echo base_url();?>welcome/syllabus" class="promo-container"><img src="<?php echo base_url(); ?>assets/img/ad1.png" alt="ad" /></a></div>
+					<div class="sidebar-widget shadow-light"> <a href="<?php echo base_url();?>welcome/syllabus" class="promo-container"><img src="<?php echo base_url(); ?>assets/img/homework.png" style="max:height:20px;max-width:100px;" max-height:alt="ad" /></a></div>
 					
 					
 			

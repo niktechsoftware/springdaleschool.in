@@ -9,7 +9,7 @@
   <div class="container">
   <h2>Image</h2>
    <div>   
-   <?php $val = $this->db->get("gallery"); 
+   <?php $val = $this->db->get("gfincuct_springAdmin.gallery"); 
    if($val->num_rows()>0)
    {
    $i=1;
